@@ -1,0 +1,16 @@
+[package]
+name = "io_rust"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+members = [
+  "envar",
+  "io_csv",    
+  "io_json", 
+  "io_xml", 
+  "io_yml"
+]
+
+[dependencies]

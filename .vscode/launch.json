@@ -1,0 +1,230 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'envar'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=envar",
+          "--package=envar"
+        ],
+        "filter": {
+          "name": "envar",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'envar'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=envar",
+          "--package=envar"
+        ],
+        "filter": {
+          "name": "envar",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'io_csv'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=io_csv",
+          "--package=io_csv"
+        ],
+        "filter": {
+          "name": "io_csv",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'io_csv'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=io_csv",
+          "--package=io_csv"
+        ],
+        "filter": {
+          "name": "io_csv",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'io_json'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=io_json",
+          "--package=io_json"
+        ],
+        "filter": {
+          "name": "io_json",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'io_json'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=io_json",
+          "--package=io_json"
+        ],
+        "filter": {
+          "name": "io_json",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'io_xml'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=io_xml",
+          "--package=io_xml"
+        ],
+        "filter": {
+          "name": "io_xml",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'io_xml'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=io_xml",
+          "--package=io_xml"
+        ],
+        "filter": {
+          "name": "io_xml",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'io_yml'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=io_yml",
+          "--package=io_yml"
+        ],
+        "filter": {
+          "name": "io_yml",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'io_yml'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=io_yml",
+          "--package=io_yml"
+        ],
+        "filter": {
+          "name": "io_yml",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'io_rust'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=io_rust",
+          "--package=io_rust"
+        ],
+        "filter": {
+          "name": "io_rust",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'io_rust'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=io_rust",
+          "--package=io_rust"
+        ],
+        "filter": {
+          "name": "io_rust",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
