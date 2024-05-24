@@ -10,7 +10,9 @@ members = [
   "io_csv",    
   "io_json", 
   "io_xml", 
-  "io_yml"
+  "io_yml", 
+  "pv_1d", 
+  "pv_time_series"
 ]
 
 [dependencies]

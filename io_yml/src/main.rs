@@ -52,7 +52,7 @@ fn main() {
 
     println!("Result of writing: {:#?}", res);    
 
-    let res = read_file(path.as_str());
+    let res = read_file(&path);
 
     println!(
         "Result of reading: {:#?}", 

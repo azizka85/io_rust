@@ -116,6 +116,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "pv_1d"
+version = "0.1.0"
+dependencies = [
+ "csv",
+]
+
+[[package]]
+name = "pv_time_series"
+version = "0.1.0"
+dependencies = [
+ "csv",
+]
+
+[[package]]
 name = "quick-xml"
 version = "0.31.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"

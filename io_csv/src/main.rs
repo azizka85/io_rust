@@ -1,4 +1,4 @@
-use std::io;
+use std::{io, fs};
 
 #[derive(Debug, serde::Deserialize, serde::Serialize)]
 struct Temperature {
@@ -11,7 +11,13 @@ struct Temperature {
 }
 
 fn main() {
-    let path = "data/temperature.csv";
+    let dir = "data";
+
+    let res = fs::create_dir_all(dir);
+
+    println!("Create dir: {:?}", res);
+
+    let path = format!("{dir}/temperature.csv");
 
     let temperature = [
         Temperature {x: 0.0, y: 0.0, z: 0.0, v: 0.0},
@@ -24,11 +30,11 @@ fn main() {
         Temperature {x: 0.5, y: 0.5, z: 1.0, v: 7.0}
     ];
 
-    let res = write_file(&temperature, path);
+    let res = write_file(&temperature, &path);
 
     println!("Result of writing: {:#?}", res);    
 
-    let res = read_file(path);
+    let res = read_file(&path);
 
     println!(
         "Result of reading: {:#?}", 

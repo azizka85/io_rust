@@ -192,6 +192,80 @@
     {
       "type": "lldb",
       "request": "launch",
+      "name": "Debug executable 'pv_1d'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=pv_1d",
+          "--package=pv_1d"
+        ],
+        "filter": {
+          "name": "pv_1d",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'pv_1d'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=pv_1d",
+          "--package=pv_1d"
+        ],
+        "filter": {
+          "name": "pv_1d",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'pv_time_series'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=pv_time_series",
+          "--package=pv_time_series"
+        ],
+        "filter": {
+          "name": "pv_time_series",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'pv_time_series'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=pv_time_series",
+          "--package=pv_time_series"
+        ],
+        "filter": {
+          "name": "pv_time_series",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
       "name": "Debug executable 'io_rust'",
       "cargo": {
         "args": [

@@ -10,6 +10,6 @@ fn main() {
 
     match env::var("SECRET_KEY") {
         Ok(val) => println!("SECRET_KEY={val}"),
-        Err(e) => println!("Couldn't read SECRET_KEY")
+        Err(e) => println!("Couldn't read SECRET_KEY, err = {:?}", e)
     };
 }
