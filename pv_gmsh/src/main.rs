@@ -128,7 +128,7 @@ fn write_file(
         format!("\nPOINT_DATA {}\n", mesh.total_node_count()).as_bytes()
     )?;
 
-    io::Write::write_all(&mut file, "SCALARS scalars float 1\n".as_bytes())?;
+    io::Write::write_all(&mut file, "SCALARS temperature float 1\n".as_bytes())?;
     io::Write::write_all(&mut file, "LOOKUP_TABLE default\n".as_bytes())?;
 
     for i in 0..mesh.total_node_count() {
