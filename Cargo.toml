@@ -7,11 +7,12 @@ edition = "2021"
 
 members = [
   "envar",
-  "io_csv",    
+  "io_csv",       
   "io_json", 
   "io_xml", 
   "io_yml", 
   "pv_1d", 
+  "pv_gmsh",
   "pv_time_series"
 ]
 

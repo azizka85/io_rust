@@ -1,0 +1,7 @@
+[package]
+name = "pv_gmsh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mshio = "0.4.2"
